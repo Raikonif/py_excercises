@@ -13,3 +13,13 @@
 # 1. Try to find out the data type of two_digit_number.
 # 2. Think about what you learnt about subscripting.
 # 3. Think about type conversion.
+
+def add_two_digits(num):
+    result = 0
+    for n in num:
+        result += int(n)
+    return result
+
+adding = add_two_digits("393")
+
+print(adding)
