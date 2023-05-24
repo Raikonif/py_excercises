@@ -26,12 +26,13 @@ def tip_calculator(bill, people, tip=0.12):
         people = int(people)
         print(bill_formatted, tip_formatted)
         tip = (bill_formatted / people) * tip_formatted
-        frmt_tip = "{:.2f}".format(tip)
-        print(f"Tip per person: ${frmt_tip}")
+        return "{:.2f}".format(tip)
 
 
-tip_calculator(
+result_tip = tip_calculator(
     bill=input("Enter the bill: $\n"),
     people=input("Enter how many peoples do you want: \n"),
     tip=input("Enter the tip: \n")
 )
+
+print(f"Each person should pay: ${result_tip}")
