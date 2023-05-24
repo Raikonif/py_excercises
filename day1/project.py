@@ -26,5 +26,6 @@ def tip_calculator(bill, split):
 
 
 tip_calculator(
-    input("Enter the bill: $\n"), input("Enter how many splits do you want: \n")
+    bill=input("Enter the bill: $\n"),
+    split=input("Enter how many splits do you want: \n"),
 )
