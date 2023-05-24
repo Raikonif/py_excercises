@@ -27,7 +27,7 @@ def tip_calculator(bill, people, tip=0.12):
         print(bill_formatted, tip_formatted)
         tip = (bill_formatted / people) * tip_formatted
         frmt_tip = "{:.2f}".format(tip)
-        print(f"Tip: ${frmt_tip}")
+        print(f"Tip per person: ${frmt_tip}")
 
 
 tip_calculator(
