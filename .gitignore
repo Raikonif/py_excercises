@@ -1,0 +1,8 @@
+# Ignore all these files
+Pipfile
+Pipfile.lock
+.idea/
+.vscode/
+__pycache__/
+.fleet/
+personal/
