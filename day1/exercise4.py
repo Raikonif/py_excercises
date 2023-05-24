@@ -22,6 +22,7 @@
 # 1. There are 365 days in a year, 52 weeks in a year and 12 months in a year.
 # 2. Try copying the example output into your code and replacing the relevant parts so that the sentence is formated the same way.\
 
+
 def years_left(age):
     years = 90 - int(age)
     months = years * 12
@@ -29,11 +30,13 @@ def years_left(age):
     days = years * 365
     return f"You have {days} days, {weeks} weeks, and {months} months left."
 
+
 def validating_age(age):
     if age.isdigit() and int(age) > 0:
         return True
     else:
         return False
+
 
 input_age = input("What is your current age? ")
 is_valid = validating_age(input_age)
