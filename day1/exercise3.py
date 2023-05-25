@@ -21,3 +21,9 @@
 # 2. Try to use the exponent operator in your code.
 # 3. Remember PEMDAS.
 # 4. Remember to convert your result to a whole number (int).
+print("Hi everyone")
+number1 = int(input("Ingrese su peso: "))
+number2 = int(input("Ingrese su estatura: "))
+multiplicacion = number2 * number2
+division = number1 / number2 **2
+print("resultado", multiplicacion + division)
