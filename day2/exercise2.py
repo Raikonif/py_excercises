@@ -9,7 +9,7 @@
 # Above 35 they are clinically obese.
 
 # The BMI is calculated by dividing a person's weight (in kg) by the square of their height (in m):
-# bmi = (weight/height) **2
+# bmi = weight/(height **2)
 
 # Warning you should round the result to the nearest whole number. The interpretation message needs to include the words in bold from the interpretations above. e.g. underweight, normal weight, overweight, obese, clinically obese.
 # Example Input
@@ -30,3 +30,41 @@
 # 1. Try to use the exponent operator in your code.
 # 2. Remember to round your result to the nearest whole number.
 # 3. Make sure you include the words in bold from the interpretations.
+
+
+def input_validation(input_data):
+    try:
+        number = float(input_data)
+        return number > 0
+    except ValueError:
+        return False
+
+
+def calculate_bmi(weight, height):
+    return float(weight) / (float(height) ** 2)
+
+
+def find_the_clasification_bmi(weight, height):
+    is_valid_weight = input_validation(weight)
+    is_valid_height = input_validation(height)
+    if is_valid_weight and is_valid_height:
+        bmi = calculate_bmi(weight, height)
+        if bmi <= 18.5:
+            return f"Your BMI is {bmi:.2f}, you are underweight."
+        elif bmi <= 25:
+            return f"Your BMI is {bmi:.2f}, you are normal."
+        elif bmi <= 30:
+            return f"Your BMI is {bmi:.2f}, you are slightly overweight."
+        elif bmi <= 35:
+            return f"Your BMI is {bmi:.2f}, you are you are obese."
+        elif 35 < bmi:
+            return f"Your BMI is {bmi:.2f}, you are clinically obese."
+    else:
+        return "Invalid input"
+
+
+calculating_bmi = find_the_clasification_bmi(
+    weight=input("put you weight in Kg:\n"),
+    height=input("put your height in meters:\n"),
+)
+print(calculating_bmi)

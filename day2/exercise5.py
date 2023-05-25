@@ -51,10 +51,10 @@
 # Not sure you're getting the correct score for the exercise? Use this table to check your code's score against mine.
 
 # Name 1	               Name 2	           Score
-# Catherine Zeta-Jones   Michael Douglas     99
-# Brad Pitt	           Jennifer Aniston	   73
+# Catherine Zeta-Jones     Michael Douglas     99
+# Brad Pitt	               Jennifer Aniston	   73
 # Prince William	       Kate Middleton	   67
-# Angela Yu	           Jack Bauer	       53
+# Angela Yu	               Jack Bauer	       53
 # Kanye West	           Kim Kardashian	   42
 # Beyonce	               Jay-Z	           23
 # John Lennon	           Yoko Ono	           18

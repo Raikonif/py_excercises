@@ -7,6 +7,7 @@
 
 # Write your code below this line 👇
 
+
 def valditation_input(number):
     if float(number) > 0 and number.isdigit():
         return True
@@ -31,7 +32,7 @@ def tip_calculator(bill, people, tip=0.12):
 result_tip = tip_calculator(
     bill=input("Enter the bill: $\n"),
     people=input("Enter how many peoples do you want: \n"),
-    tip=input("Enter the tip: \n")
+    tip=input("Enter the tip: \n"),
 )
 
 print(f"Each person should pay: ${result_tip}")

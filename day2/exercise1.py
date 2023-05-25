@@ -39,3 +39,25 @@
 # 6 % 2
 # 8 % 2
 # See what's in common each time.
+
+
+def input_validation(number):
+    if number.isdigit() and float(number).is_integer():
+        return True
+    else:
+        return False
+
+
+def is_even_number(number):
+    is_valid_number = input_validation(number)
+    if is_valid_number:
+        if int(number) % 2 == 0:
+            return "Is Even Number"
+        else:
+            return "Is Odd Number"
+    else:
+        return "Invalid Input"
+
+
+number_type = is_even_number(input("Write a number to know if it is even or odd\n"))
+print(number_type)
