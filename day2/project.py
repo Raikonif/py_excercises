@@ -33,3 +33,23 @@ print("Your mission is to find the treasure.")
 # 6. if select right will fell into a hole and Game Over.
 
 # Write your code below this line 👇
+puertas = {
+    "roja" : "Pared",
+    "amarilla" : "Pared",
+    "azul" : "Win"
+}
+options = input("Seleccione dos opciones izq o der: ")
+if izq:
+    input("Escoja esperar o nadar: ")
+else:
+    return Game_Over
+if esperar:
+    print("LLegaste a una isla!!")
+    input("Seleccione una de estas tres puertas: roja, amarilla y azul")
+    print(puertas)
+
+
+
+
+
+       

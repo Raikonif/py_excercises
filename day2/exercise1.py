@@ -39,3 +39,10 @@
 # 6 % 2
 # 8 % 2
 # See what's in common each time.
+
+print("Hello everyone!!")
+n = int(input("Ingrese un numero: "))
+if n % 2 == 0:
+    print(n, "es par")
+else: 
+    print(n, "es impar")
