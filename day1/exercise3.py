@@ -22,7 +22,6 @@
 # 3. Remember PEMDAS.
 # 4. Remember to convert your result to a whole number (int).
 
-
 def validating_input(weight, height):
     if (
         float(weight) > 0
