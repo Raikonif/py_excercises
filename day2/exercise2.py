@@ -30,3 +30,25 @@
 # 1. Try to use the exponent operator in your code.
 # 2. Remember to round your result to the nearest whole number.
 # 3. Make sure you include the words in bold from the interpretations.
+print("Hellow everyone!!")
+def Imc(estatura, peso):
+    return peso / estatura**2
+
+peso = float(input("Ingrese su peso en Kg: "))
+estatura = float(input("Ingrese su estatura en Metros: "))
+
+indice = round(Imc(estatura, peso))
+
+print('Su IMC es: {}'.format((indice)))
+if indice < 18:
+    print("Tienes bajo peso")
+elif indice == 22:
+    print("tienes peso normal")
+elif indice == 28:
+    print("Tienes un poco de sobrepeso")
+elif indice == 33:
+    print("Eres obeso")
+elif indice > 40:
+    print("Clinicamente obeso, ten cuidado!!")
+
+

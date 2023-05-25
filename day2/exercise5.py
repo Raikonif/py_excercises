@@ -64,3 +64,4 @@
 # https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python
 # 2. The count() function will give you the number of times a letter occurs in a string.
 # https://stackoverflow.com/questions/1155617/count-the-number-occurrences-of-a-character-in-a-string
+print("esta muy avanzado Dieguito, es como el dinosaurio que hice con scores y eso me demoro mucho tiempo aquella vez")
