@@ -64,3 +64,32 @@
 # https://stackoverflow.com/questions/6797984/how-do-i-lowercase-a-string-in-python
 # 2. The count() function will give you the number of times a letter occurs in a string.
 # https://stackoverflow.com/questions/1155617/count-the-number-occurrences-of-a-character-in-a-string
+
+TRUE = "true"
+LOVE = "love"
+def counting_points(name):
+    total_true = 0
+    total_love = 0
+    total_true += name.count("t")
+    total_true += name.count("r")
+    total_true += name.count("u")
+    total_true += name.count("e")
+    total_love += name.count("l")
+    total_love += name.count("o")
+    total_love += name.count("v")
+    total_love += name.count("e")
+    return total_true, total_love
+
+
+def true_calculator(name1, name2):
+    name1_modified = name1.lower();
+    name2_modified = name2.lower();
+    name1_true, name1_love = counting_points(name1_modified)
+    name2_true, name2_love = counting_points(name2_modified)
+    return name1_true,name1_love, name2_true, name2_love
+
+a, b, c, d = true_calculator("Nandy", "Diego")
+print("total true", str(a+c))
+print("total love", str(b+d))
+print(a, b, c, d)
+
