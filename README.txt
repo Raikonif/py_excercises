@@ -1,4 +1,5 @@
-#Pre Requisitos
+# Manejo basico de proyecto y ramas en git
+# Pre Requisitos
 # a. que tu rama previamente este pusheada
 # b. asegurarte que no lleves cambios a la rama main
 # c. estar en el proyecto correcto
