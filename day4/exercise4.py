@@ -27,3 +27,13 @@
 # Hint
 # Remember your answer should start from 1 and go up to and including 100.
 # 2. Each number/text should be printed on a separate line.
+n = int(input("Ingrese un numero:"))
+if n /3:
+    print("Fizz")
+else:
+    print("incorrecto")
+
+if n /5:
+    print("Buzz")
+else:
+    print("Incorrecto")

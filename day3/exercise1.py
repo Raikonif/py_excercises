@@ -14,3 +14,14 @@
 # Tails
 # ---------------------------------------------
 # When you're happy with your code, click submit.
+print("Bienvenido!")
+opciones = ["cara", "cruz"]
+opcion_jugador = input("Elige cara o cruz: ")
+opcion_pc = random.choice(opciones)
+
+print(f"El ordenador eligio {opcion_pc}")
+
+if opcion_jugador != opcion_pc:
+    print("Ganaste")
+else:
+    print("Perdiste")

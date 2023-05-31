@@ -7,3 +7,12 @@
 
 # Hint
 # There are quite a few ways of solving this problem, but you will need to use the range() function in any of the solutions.
+suma = 0
+n = 1
+while n != 0:
+    n = int(input("Ingresa un numero: "))
+    if n != 0:
+        if n  % 2 == 0:
+            suma = suma +n
+
+print("La suma de los numeros pares es: ", suma)

@@ -14,3 +14,7 @@
 # https://stackoverflow.com/questions/1712227/how-do-i-get-the-number-of-elements-in-a-list
 #
 # Remember that Lists start at index 0!
+list = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+index = 0
+for index in list:
+    print(list)

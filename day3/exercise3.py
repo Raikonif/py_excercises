@@ -33,3 +33,4 @@
 # ['⬜️', '⬜️', 'X']
 # ['⬜️', '⬜️', '⬜️']
 # ['⬜️', '⬜️', '⬜️']
+print("Esta mas complicado para mi esto de marcar o dibujar x en un cuadrado")

@@ -16,3 +16,11 @@
 
 # Hint
 # Think about the logic before writing code. How can you compare numbers against each other to see which one is larger?
+n = int(input("Ingrese sus calificaciones: "))
+calificacion_alta = 0
+
+for n in range(10):
+    n = int(input(f"Ingrese {n+1} califiacion: "))
+    if calificacion_alta < n:
+        calificacion_alta = n
+print("La calificacion mas alta es:{}.format{calificacion_alta}")

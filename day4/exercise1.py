@@ -25,3 +25,32 @@
 # 171
 # Hint
 # Remember to use the round() function to round the average height before you print it.
+number = input ("Ingrese la cantidad de personas: ")
+if number > 0:
+    altura_hombres = 0
+    altura_mujeres = 0
+    cantidad_hombres = 0
+    cantidad_mujeres = 0
+
+    for datos in range(n):
+        
+        altura = int(input("Ingrese la altura en Cm: "))
+        genero = input("Ingrese el genero de la persona (M) (H): ")
+
+        if genero.upper() == "M":
+            altura_M += altura
+        
+        elif genero.upper() == "H":
+            altura_H += altura
+        else:
+            print("Genero seleccionado incorrecto")
+
+    promedio = altura_M / cantidad_mujeres
+    promedio2 = altura_H / cantidad_hombres
+
+    print("De acuerdo a los datos los promedios son:")
+    print("Promedio altura H = Hombres:", promedio2)
+    print("Promedio altura M = Mujeres:", promedio)
+
+else:
+    print("Ingreso incorrectamente, intentelo nuevamente")
