@@ -24,3 +24,16 @@
 # Make sure you name your function/parameters the same as when it's called on the last line of code.
 
 # Use the same wording as the Example Outputs to make sure the tests pass.
+num = int(input("Ingrese un numero: "))
+if num > 1:
+    cont = 0
+    for number in range (2,num):
+        resto = num % number
+        if resto == 0:
+            cont += 1
+    if cont == 0:
+        print("El {} es un numero primo".format(num))
+    else:
+        print("El {} no es un numero primo".format(num))
+else:
+    print("El {} no es un numero primo".format(num))

@@ -20,3 +20,11 @@
 # You'll need 6 cans of paint.
 # Hint
 # 1. To round up a number:
+for datos in range(2):
+        
+    altura = int(input("Ingrese la altura de su pared en cm: "))
+    ancho = int(input("Ingrese el ancho de su pared en cm: "))
+    multiplicacion = altura * ancho
+    division = multiplicacion / 5
+    print("Esto necesitas de pintura para tu pared:", division)
+
