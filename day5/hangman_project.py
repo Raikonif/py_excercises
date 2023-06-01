@@ -1,3 +1,4 @@
+import random
 # Step 1
 
 word_list = ["aardvark", "baboon", "camel"]
@@ -7,3 +8,20 @@ word_list = ["aardvark", "baboon", "camel"]
 # TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
 
 # TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
+palabra = random.choice(word_list)
+letras_adivinadas = []
+
+while True:
+    letra: input("Ingrese una letra: ")
+    letras_adivinadas.append(letra)
+
+    palabra_oculta = ""
+    for letter in palabra:
+        if letter in letras_adivinadas:
+            palabra_oculta+=letter
+        else:
+            palabra_oculta+= "_"
+    print(palabra_oculta)
+
+    if "_" not in palabra_oculta:
+        print("Ganaste!!!")
