@@ -25,3 +25,27 @@
 # If in doubt as to why your code is not doing what you expected, you can always print out the intermediate values.
 
 # At the end of your program, the print statement will show the final student_scores dictionary, do not change this.
+usuario = input("Elija a = ver putanjes, b = ver calificaciones:\n")
+a = student_scores()
+b = student_grades()
+
+students_scores = {
+    "Harry": "81",
+    "Ron" : "75",
+    "Hermione" : "100",
+    "Draco" : "80",
+    "Neville" : "60",
+}
+for names in students_scores.keys():
+    print(names)
+students_grades = {
+    "Harry": "Exceeds Expectations",
+    "Ron" : "Acceptable",
+    "Hermione" : "Outstanding",
+    "Draco" : "Accectable",
+    "Neville" : "Fail",}
+print(students_grades)
+if a == usuario:
+    print(students_scores)
+elif usuario == b:
+    print(students_grades)

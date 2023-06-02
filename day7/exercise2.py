@@ -16,3 +16,6 @@
 # The inputs for the function are positional arguments. The order is very important.
 
 # Feel free to choose your own parameter names.
+add_new_country= ("Russia", 2,
+ ["Moscow", "Saint Petersburg"])
+print(add_new_country)
