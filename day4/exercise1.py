@@ -26,7 +26,7 @@
 # Hint
 # Remember to use the round() function to round the average height before you print it.
 number = input ("Ingrese la cantidad de personas: ")
-if number > 0:
+if number > 1:
     altura_hombres = 0
     altura_mujeres = 0
     cantidad_hombres = 0
