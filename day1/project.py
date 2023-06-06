@@ -6,3 +6,7 @@
 # Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
 
 # Write your code below this line 👇
+total = 150 
+division =total / 5
+multiplicacion = division * 1.12
+print("Propina es", multiplicacion)
