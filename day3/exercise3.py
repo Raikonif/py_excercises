@@ -33,4 +33,32 @@
 # ['⬜️', '⬜️', 'X']
 # ['⬜️', '⬜️', '⬜️']
 # ['⬜️', '⬜️', '⬜️']
-print("Esta mas complicado para mi esto de marcar o dibujar x en un cuadrado")
+
+filas=[
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+]
+print(filas)
+
+cua= input("Columna y fila: ")
+if cua == 11:
+    print("X",filas)
+elif cua == 12:
+   print("X",filas)
+elif cua == 13:
+    print("X",filas)
+elif cua == 21:
+    print("X",filas)
+elif cua == 22:
+    print("X",filas)
+elif cua == 23:
+    print("X",filas)
+elif cua == 31:
+    print("X",filas)
+elif cua == 32:
+    print("X",filas)
+elif cua == 33:
+    print("X",filas)
