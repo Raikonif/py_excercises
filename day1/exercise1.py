@@ -5,5 +5,6 @@
 # 5. Make sure the input cursor shows on a new line:
 
 # Solution: https://replit.com/@appbrewery/band-name-generator-end
+
 print("Hola")
 print("hashdjahsdj")

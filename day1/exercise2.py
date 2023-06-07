@@ -13,3 +13,8 @@
 # 1. Try to find out the data type of two_digit_number.
 # 2. Think about what you learnt about subscripting.
 # 3. Think about type conversion.
+
+print("Hi everyone!")
+number = int(input("Ingrese un numero de dos digitos para ser sumados por separado: "))
+suma = number + number
+print("El resultado es:", suma)

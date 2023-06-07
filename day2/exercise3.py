@@ -31,3 +31,9 @@
 # Hint
 # 1. Try to visualise the rules by creating a flow chart on www.draw.io
 # 2. If you really get stuck, you can see the flow chart I created: https://bit.ly/36BjS2D
+print("Hi everyone!!")
+n = ("Ingrese el año para saber si es bisiesto: ")
+if n/4 == 0:
+    print(n, "Es bisiesto")
+else: 
+    print(n, "no es bisiesto")
