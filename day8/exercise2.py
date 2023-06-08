@@ -16,3 +16,16 @@
 # The inputs for the function are positional arguments. The order is very important.
 
 # Feel free to choose your own parameter names.
+add_new_country=([
+    'Russia' , '2',
+    "Moscow" , "1",
+    "Saint Petersburg", "1"
+    ])
+country = input("Ingrese A para saber cuantas veces has estado en Russia y B en que lugares mas visitaste:\n")
+if country == "A":
+    print("Visitaste Russia:")
+    print(add_new_country["Russia"], veces)
+elif country == "B":
+    print("Estuviste en estos lugares mas:")
+    print(add_new_country)
+

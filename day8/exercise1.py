@@ -25,3 +25,40 @@
 # If in doubt as to why your code is not doing what you expected, you can always print out the intermediate values.
 
 # At the end of your program, the print statement will show the final student_scores dictionary, do not change this.
+print("Bienvenidos!!, estan listos para ver notas? :)")
+student_scores = {
+    'Harry': '90', 
+    'Ron': '71', 
+    'Hermione': '100', 
+    'Draco': '80', 
+    'Neville': '70'
+    }
+student_grades = {
+    'Harry': 'Exceeds Expectations', 
+    'Ron': 'Acceptable', 
+    'Hermione': 'Outstanding', 
+    'Draco': 'Acceptable', 
+    'Neville': 'Fail'
+    }
+
+for ellos in student_scores:
+    print( ellos)
+
+student = input("Ingrese su nombre para ver su calificacion:\n")
+if student == "Harry":
+    print("Tu calificaion fue:")
+    print(student_grades['Harry'])
+elif student == "Ron":
+    print("Tu calificaion fue:")
+    print(student_grades['Ron'])
+elif student == "Hermione":
+    print("Tu calificaion fue:")
+    print(student_grades['Hermione'])
+elif student == "Draco":
+    print("Tu calificaion fue:")
+    print(student_grades['Draco'])
+elif student == "Neville":
+    print("Tu calificaion fue:")
+    print(student_grades['Neville'])
+else:
+    print("INCORRECTO, Escriba bien su nombre(No se olvide mayus. al principio de su nombre)")
