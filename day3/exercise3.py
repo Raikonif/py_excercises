@@ -34,31 +34,102 @@
 # ['⬜️', '⬜️', '⬜️']
 # ['⬜️', '⬜️', '⬜️']
 
-filas=[
- ['⬜️', '⬜️', '⬜️'],
+filas= [
+    ['⬜️', '⬜️', '⬜️'],
+    ['⬜️', '⬜️', '⬜️'],
+    ['⬜️', '⬜️', '⬜️'],
+    ]
+
+fila1=[
+ ['X', '⬜️', '⬜️'],
 
  ['⬜️', '⬜️', '⬜️'],
 
  ['⬜️', '⬜️', '⬜️'],
 ]
+
+fila2=[
+ ['⬜️', 'X', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+]
+
+fila3=[
+ ['⬜️', '⬜️', 'X'],
+
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+]
+
+fila4=[
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['X', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+]
+
+fila5=[
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', 'X', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+]
+
+fila6=[
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', 'X'],
+
+ ['⬜️', '⬜️', '⬜️'],
+]
+
+fila7=[
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['X', '⬜️', '⬜️'],
+]
+
+fila8=[
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', 'X', '⬜️'],
+]
+
+fila9=[
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', '⬜️'],
+
+ ['⬜️', '⬜️', 'X'],
+]
+
 print(filas)
 
-cua= input("Columna y fila: ")
-if cua == 11:
-    print("X",filas)
-elif cua == 12:
-   print("X",filas)
-elif cua == 13:
-    print("X",filas)
-elif cua == 21:
-    print("X",filas)
-elif cua == 22:
-    print("X",filas)
-elif cua == 23:
-    print("X",filas)
-elif cua == 31:
-    print("X",filas)
-elif cua == 32:
-    print("X",filas)
-elif cua == 33:
-    print("X",filas)
+cua= input("Columna y fila:\n ")
+if cua == "11":
+    print(fila1)
+elif cua == "12":
+   print(fila2)
+elif cua == "13":
+    print(fila3)
+elif cua == "21":
+    print(fila4)
+elif cua == "22":
+    print(fila5)
+elif cua == "23":
+    print(fila6)
+elif cua == "31":
+    print(fila7)
+elif cua == "32":
+    print(fila8)
+elif cua == "33":
+    print(fila9)
