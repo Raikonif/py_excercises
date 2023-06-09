@@ -15,3 +15,13 @@
 # Feel free to choose your own parameter names.
 
 # Remember that month_days is a List and Lists in Python start at position 0. So the number of days in January is month_days[0]
+input_year = int(input("Enter a year:\n"))
+def is_leap(year):
+    if (year % 400 == 0) or (year & 4 == 0 and year % 100 != 0):
+        return True
+    return False
+
+if is_leap(input_year):
+    print("True")
+else:
+    print("False")
