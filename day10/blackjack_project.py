@@ -1,3 +1,6 @@
+import random
+playerIn = True
+dealerIn = True
 ############### Blackjack Project #####################
 
 # Difficulty Normal 😎: Use all Hints below to complete the project.
@@ -58,5 +61,75 @@
 # Hint 13: Create a function called compare() and pass in the user_score and computer_score. If the computer and user both have the same score, then it's a draw. If the computer has a blackjack (0), then the user loses. If the user has a blackjack (0), then the user wins. If the user_score is over 21, then the user loses. If the computer_score is over 21, then the computer loses. If none of the above, then the player with the highest score wins.
 
 # Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
-print("Esta complicado Dieguito :(")
-print("Muy avanzado...")
+deck = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10,
+        'J', 'Q', 'K', 'A', 'J', 'Q', 'K', 'A', 'J', 'Q', 'K', 'A']
+playerHand = []
+dealerHand = []
+
+def dealCard(turn):
+    card = random.choice(deck)
+    turn.append(card)
+    deck.remove(card)
+
+def total(turn):
+    total = 0
+    face =['J', 'K', 'Q']
+    for card in  turn:
+        if card in range (1,11):
+            total += card
+        elif card in face:
+            total += 10
+        else :
+            if total > 11 :
+                total += 1
+            else :
+                total += 11
+    return total
+
+def revealDealerHand():
+    if len(dealerHand) == 2:
+        return dealerHand[0]
+    elif len (dealerHand) > 2:
+        return dealerHand[0], dealerHand[1]
+
+for _ in range (2):
+    dealCard(dealerHand)
+    dealCard(playerHand)
+
+while playerIn or dealerIn:
+    print(f"Dealer had {revealDealerHand()} and X ")
+    print(f"You Have {playerHand} for a total of {total(playerHand)}")
+    if playerIn:
+        stayOrHit = input ("1: Stay\n2: Hit\n")
+    if total(dealerHand) > 16:
+        dealerIn = False
+    else:
+        dealCard(dealerHand)
+    if stayOrHit == '1':
+        playerIn = False
+    else:
+        dealCard(playerHand)
+    if total(playerHand) >= 21:
+        break
+    elif total(dealerHand) >= 21:
+        break
+
+if total(playerHand) == 21:
+    print(f"\nYou have {playerHand} for a total of {total(playerHand)} and the dealer has {dealerHand} for a total of {total(dealerHand)}")
+    print("Blackjack!! Ganaste!!")
+elif total(dealerHand) == 21:
+    print(f"\nYou have {playerHand} for a total of {total(playerHand)} and the dealer has {dealerHand} for a total of {total(dealerHand)}")
+    print("Blackjack!! Ganaste!!")
+elif total (playerHand) > 21:
+    print(f"\nYou have {playerHand} for a total of {total(playerHand)} and the dealer has {dealerHand} for a total of {total(dealerHand)}")
+    print("You bust, Dealer wins!!!")
+elif total(dealerHand) > 21:
+    print(f"\nYou have {playerHand} for a total of {total(playerHand)} and the dealer has {dealerHand} for a total of {total(dealerHand)}")
+    print("Dealer busts, You win!!!")
+elif 21 - total(dealerHand) < 21 - total(playerHand):
+    print(f"\nYou have {playerHand} for a total of {total(playerHand)} and the dealer has {dealerHand} for a total of {total(dealerHand)}")
+    print("Dealer wins!!")
+elif 21 - total(dealerHand) > 21 - total(playerHand):
+    print("YOU WIN")
+    
+
