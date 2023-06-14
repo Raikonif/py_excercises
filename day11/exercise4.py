@@ -4,3 +4,4 @@
 # Access a global variable inside the function and print its value.
 # Then, assign a new value to the global variable. Finally, ask the user to enter a number, call the function,
 # and print the updated global variable.
+print("No entiendo Dieguito")
