@@ -4,8 +4,10 @@
 # Use a global variable to store the result. Then, ask the user to enter a number, call the function with the input number,
 # and print the updated global variable.
 num = input("Ingrese numero:")
-def update_global_variable(number):
-    number = num * 2
+num1 = input("Seleccione el 2: ")
+multi = num * 2
+if num1 == "2":
     print(multi)
-    
-    
+
+def update_global_variable():
+   print(multi)
