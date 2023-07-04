@@ -17,3 +17,16 @@
 # Angela
 # 12
 # [75, 87, 65]
+lista= [75,87,65]
+a = 75
+b = 87
+c = 65
+promedio= (75+87+65)/3
+print(promedio)
+class Student:
+    def __init__(self,name,age,grades):
+        self.name = name
+        self.age = age
+        self.grades = grades
+Angela = Student("Angela", "12", lista)
+print (Angela)
