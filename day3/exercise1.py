@@ -14,3 +14,10 @@
 # Tails
 # ---------------------------------------------
 # When you're happy with your code, click submit.
+import random
+
+heads = 1
+tails = 0
+
+result = random.randint(0, 1)
+print("Heads" if result == 1 else "Tails")

@@ -14,3 +14,11 @@
 # https://stackoverflow.com/questions/1712227/how-do-i-get-the-number-of-elements-in-a-list
 #
 # Remember that Lists start at index 0!
+
+import random
+
+
+names = input("put a list of names: ")
+list_names_converted = names.split(",")
+random_result = random.randint(0, len(list_names_converted) - 1)
+print(list_names_converted[random_result], "is going to buy the meal today!")

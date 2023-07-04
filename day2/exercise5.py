@@ -67,6 +67,8 @@
 
 TRUE = "true"
 LOVE = "love"
+
+
 def counting_points(name):
     total_true = 0
     total_love = 0
@@ -82,12 +84,12 @@ def counting_points(name):
 
 
 def true_calculator(name1, name2):
-    name1_modified = name1.lower();
-    name2_modified = name2.lower();
+    name1_modified = name1.lower()
+    name2_modified = name2.lower()
     name1_true, name1_love = counting_points(name1_modified)
     name2_true, name2_love = counting_points(name2_modified)
     return str((name1_true + name2_true)) + str((name1_love + name2_love))
 
+
 total = true_calculator("Nandy", "Diego")
 print("total compatibility", total)
-

@@ -33,3 +33,28 @@
 # ['⬜️', '⬜️', 'X']
 # ['⬜️', '⬜️', '⬜️']
 # ['⬜️', '⬜️', '⬜️']
+
+
+print(
+    """
+['⬜️', '⬜️', '⬜️']
+['⬜️', '⬜️', '⬜️']
+['⬜️', '⬜️', '⬜️']
+"""
+)
+
+coordinates = input("put two digits number between 1 to 3:\n")
+if (
+    0 < int(coordinates[0]) <= 3
+    and 0 < int(coordinates[1]) <= 3
+    and len(coordinates) == 2
+):
+    row = int(coordinates[0])
+    column = int(coordinates[1])
+
+    map = [["⬜️", "⬜️", "⬜️"], ["⬜️", "⬜️", "⬜️"], ["⬜️", "⬜️", "⬜️"]]
+    map[row - 1][column - 1] = "X"
+
+    print(f"{map[0]}\n{map[1]}\n{map[2]}")
+else:
+    print("please enter two digits number between 1 to 3")
