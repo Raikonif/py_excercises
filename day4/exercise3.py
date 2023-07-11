@@ -7,3 +7,8 @@
 
 # Hint
 # There are quite a few ways of solving this problem, but you will need to use the range() function in any of the solutions.
+
+total_even_sum = 0
+for even in range(2, 100, 2):
+    total_even_sum += even
+print(f"the total sum of even numbers is: {total_even_sum}")

@@ -25,3 +25,15 @@
 # 171
 # Hint
 # Remember to use the round() function to round the average height before you print it.
+
+heights = input(
+    "add the heights of the students and print the average height of the all students:\n"
+)
+heights_list = heights.split(" ")
+
+total_heights = 0
+for stu_height in heights_list:
+    total_heights += float(stu_height)
+result = round(total_heights / len(heights_list))
+
+print(result)

@@ -16,3 +16,11 @@
 
 # Hint
 # Think about the logic before writing code. How can you compare numbers against each other to see which one is larger?
+
+student_scores = input("Input the students scores:\n")
+scores_list = student_scores.split(" ")
+max_score = 0
+for score in scores_list:
+    if int(score) > max_score:
+        max_score = int(score)
+print(f"The highest score in the clas is: {max_score}")

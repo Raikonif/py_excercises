@@ -27,3 +27,14 @@
 # Hint
 # Remember your answer should start from 1 and go up to and including 100.
 # 2. Each number/text should be printed on a separate line.
+
+
+for num in range(1,100):
+    if num%3 == 0 and num%5==0:
+        print("FizzBuzz")
+    elif num%3 == 0 and num <= 3:
+        print("Fizz")
+    elif num%5 == 0 and num <=5:
+        print("Buzz")
+    else:
+        print(num)
