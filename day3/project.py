@@ -49,7 +49,7 @@ select your choice:
     )
 )
 computer_input = randint(1, 3)
-g
+
 player_choice = game_options[player_input - 1]
 computer_choice = game_options[computer_input - 1]
 

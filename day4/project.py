@@ -31,7 +31,7 @@
 # ```
 # And every time you generate a password, the positions of the symbols, numbers, and letters are different.
 
-import random
+from random import randint, choice, shuffle
 
 letters = [
     "a",
@@ -94,6 +94,32 @@ print("Welcome to the PyPassword Generator!")
 nr_letters = int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
+
+print(f"letters: {len(letters)}, numbers: {len(numbers)}, symbols: {len(symbols)}")
+random_letters = []
+random_symbols = []
+random_numbers = []
+password_generated = ""
+
+while nr_letters > 0:
+    random_letter_selected = randint(1, len(letters)-1)
+    password_generated += letters[random_letter_selected]
+    nr_letters -= 1
+
+while nr_numbers > 0:
+    random_number_selected = randint(1, len(numbers)-1)
+    password_generated += numbers[random_number_selected]
+    nr_numbers -= 1
+
+while nr_symbols > 0:
+    random_symbol_selected = randint(1, len(symbols)-1)
+    password_generated += symbols[random_symbol_selected]
+    nr_symbols -= 1
+
+pass_list = list(password_generated)
+shuffle(pass_list)
+shuffled_pass = "".join(pass_list)
+print(shuffled_pass)
 
 # Eazy Level - Order not randomised:
 # e.g. 4 letter, 2 symbol, 2 number = JduE&!91
