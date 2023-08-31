@@ -1,5 +1,6 @@
 # Step 1
 from random import choice
+
 # TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
 # TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
 # TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
@@ -8,9 +9,12 @@ from random import choice
 # If the letter at that position matches 'guess' then reveal that letter in the display at that position.
 # TODO 6 - Print 'display' and you should see the guessed letter in the correct position and every other letter replace with "_".
 
+
 def chossen_word():
     word_list = ["aardvark", "baboon", "camel"]
     return choice(word_list)
+
+
 def display_word(word, guessed_letters):
     display = ""
     for letter in word:
@@ -19,6 +23,7 @@ def display_word(word, guessed_letters):
         else:
             display += "_"
     return display
+
 
 def hangman():
     word_to_guess = chossen_word()
@@ -33,7 +38,7 @@ def hangman():
         else:
             guessed_letters.append(guess)
             if guess not in word_to_guess:
-                attempts -=1
+                attempts -= 1
                 print("Incorrect guess. Attempst Left: ", attempts)
             if "_" not in display_word(word_to_guess, guessed_letters):
                 print("\nCongratulations! You Guessed the word: ", word_to_guess)
@@ -41,5 +46,6 @@ def hangman():
             if attempts == 0:
                 print("\nGame Over. The word was: ", word_to_guess)
                 break
+
 
 hangman()

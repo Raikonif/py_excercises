@@ -106,7 +106,7 @@ random_symbols = []
 random_numbers = []
 password_generated = ""
 
-while nr_letters  > 0:
+while nr_letters > 0:
     random_letter_selected = randint(1, len(letters) - 1)
     password_generated += letters[random_letter_selected]
     nr_letters -= 1
@@ -125,4 +125,3 @@ pass_list = list(password_generated)
 shuffle(pass_list)
 shuffled_pass = "".join(pass_list)
 print(shuffled_pass)
-
