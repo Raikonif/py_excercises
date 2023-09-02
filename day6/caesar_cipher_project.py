@@ -63,21 +63,6 @@ def encrypt(direction, text, shift):
     core_encryption(text, shift, direction)
 
 
-def encode(text, shift):
-    encrypted_text = ""
-    for letter in text:
-        if letter in alphabet:
-            index = alphabet.index(letter)
-            new_index = index + shift
-            if new_index > 25:
-                new_index -= 26
-                encrypted_text += alphabet[new_index]
-            else:
-                encrypted_text += alphabet[new_index]
-
-    print(f"The encoded text is {encrypted_text}")
-
-
 def core_encryption(text, shift, direction):
     caesar_cipher_text = ""
     for letter in text:
@@ -106,6 +91,21 @@ def decoding(index, shift):
         return alphabet[new_index]
     else:
         return alphabet[new_index]
+
+
+def encode(text, shift):
+    encrypted_text = ""
+    for letter in text:
+        if letter in alphabet:
+            index = alphabet.index(letter)
+            new_index = index + shift
+            if new_index > 25:
+                new_index -= 26
+                encrypted_text += alphabet[new_index]
+            else:
+                encrypted_text += alphabet[new_index]
+
+    print(f"The encoded text is {encrypted_text}")
 
 
 def decode():
