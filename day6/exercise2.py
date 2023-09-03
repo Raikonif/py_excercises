@@ -29,6 +29,8 @@
 
 input_number = int(input("Check this number: "))
 def prime_checker(number):
+    if number < 2:
+        return print(f"{number} is not a prime number.")
     is_prime = True
     for i in range(2, number):
         if number % i == 0:
