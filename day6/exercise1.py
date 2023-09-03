@@ -29,9 +29,11 @@
 
 # Write your code below this line 👇
 
+
 def paint_calc(height, width, cover):
     number_of_cans = round((height * width) / cover)
     print(f"You'll need {number_of_cans} cans of paint.")
+
 
 # Write your code above this line 👆
 paint_calc(3, 9, 5)
