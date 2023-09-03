@@ -24,3 +24,19 @@
 # Make sure you name your function/parameters the same as when it's called on the last line of code.
 
 # Use the same wording as the Example Outputs to make sure the tests pass.
+
+# Write your code below this line 👇
+
+input_number = int(input("Check this number: "))
+def prime_checker(number):
+    is_prime = True
+    for i in range(2, number):
+        if number % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(f"{number} is a prime number.")
+    else:
+        print(f"{number} is not a prime number.")
+
+prime_checker(input_number)

@@ -20,3 +20,18 @@
 # You'll need 6 cans of paint.
 # Hint
 # 1. To round up a number:
+
+# https://stackoverflow.com/questions/2356501/how-do-you-round-up-a-number-in-python
+
+# 2. Make sure you name your function/parameters the same as when it's called on the last line of code.
+
+# 3. Use the function test heights and test widths to test your code.
+
+# Write your code below this line 👇
+
+def paint_calc(height, width, cover):
+    number_of_cans = round((height * width) / cover)
+    print(f"You'll need {number_of_cans} cans of paint.")
+
+# Write your code above this line 👆
+paint_calc(3, 9, 5)
