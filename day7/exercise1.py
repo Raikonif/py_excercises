@@ -25,3 +25,37 @@
 # If in doubt as to why your code is not doing what you expected, you can always print out the intermediate values.
 
 # At the end of your program, the print statement will show the final student_scores dictionary, do not change this.
+
+students_scores = {
+    "Harry": 81,
+    "Ron": 78,
+    "Hermione": 99,
+    "Draco": 74,
+    "Neville": 62,
+    "Danny": 100,
+    "Dennis": 100,
+    "Dylan": 100,
+    "Dustin": 100,
+    "Bran": 100,
+    "Bryce": 60,
+    "Brock": 30,
+    "Brett": 20,
+    "Carl": 77,
+    "Caleb": 88,
+    "Hannah": 99,
+    "Haley": 49,
+    "Holly": 37,
+}
+
+for key in students_scores:
+    if students_scores[key] > 90:
+        students_scores[key] = "Outstanding"
+    elif students_scores[key] > 80:
+        students_scores[key] = "Exceeds Expectations"
+    elif students_scores[key] > 70:
+        students_scores[key] = "Acceptable"
+    else:
+        students_scores[key] = "Fail"
+
+for key, value in students_scores.items():
+    print(f"{key}: {value}")
