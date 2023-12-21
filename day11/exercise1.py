@@ -9,3 +9,20 @@
 # Hint:
 # 1. Learn About Global and Local Variables
 # 2. Use Functions for best practices
+
+
+def count_vowels_consonants(string):
+    string = string.replace(" ", "")
+    total_vowels = 0
+    total_consonants = 0
+    for letter in string:
+        if letter in "aeiou":
+            total_vowels += 1
+        else:
+            total_consonants += 1
+
+    print("Total vowels: ", total_vowels)
+    print("Total consonants: ", total_consonants)
+
+
+count_vowels_consonants("hola mundo")
